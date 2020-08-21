@@ -8,6 +8,7 @@ http.createServer(function(pedido, resposta) {
     if (pedido.url === '/') {
         resposta.end("Estou na HomePage!");
     }
+    // Criar uma resposta pra página de /contato, que vai responder "Estou no contato"
 
     resposta.end("404: Não encontrada!");
 }).listen(3000, 'localhost', function() {
